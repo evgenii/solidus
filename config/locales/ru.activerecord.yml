@@ -1,0 +1,356 @@
+ru:
+  activerecord:
+    attributes:
+      spree/product_property:
+        value: Значение
+      spree/price:
+        currency: Валюта
+        amount: Цена
+        is_default: Как осн.
+      spree/shipment:
+        tracking: Номер ТТН
+      spree/address:
+        address1: "Адрес"
+        address2: "адрес (продолж.)"
+        city: "Населённый пункт"
+        country: "Страна"
+        firstname: "Имя"
+        lastname: "Фамилия"
+        phone: "Телефон"
+        state: "Область/Регион"
+        zipcode: "Почтовый индекс"
+      spree/calculator/tiered_flat_rate:
+        preferred_base_amount:
+        preferred_tiers:
+      spree/calculator/tiered_percent:
+        preferred_base_percent:
+        preferred_tiers:
+      spree/country:
+        iso: ISO
+        iso3: ISO3
+        iso_name: ISO-имя
+        name: "Название"
+        numcode: ISO-код
+      spree/credit_card:
+        base:
+        cc_type: "Тип кредитной карты"
+        month: "Месяц"
+        name:
+        number: "Номер"
+        verification_value: "Значение проверки"
+        year: "Год"
+      spree/inventory_unit:
+        state: "Состояние"
+      spree/line_item:
+        price: "Цена"
+        quantity: "Кол-во"
+      spree/option_type:
+        name: "Название"
+        presentation: "Представление"
+      spree/order:
+        checkout_complete: "Оформление заказа завершено"
+        completed_at: "Завершено"
+        considered_risky: "Статус риска"
+        coupon_code: "Код купона"
+        created_at: "Дата заказа"
+        email: E-mail покупателя
+        ip_address: IP-адрес
+        item_total: "Итого по товарам"
+        number: "Номер"
+        payment_state: "Состояние оплаты"
+        shipment_state: "Состояние доставки"
+        special_instructions: "Специальные инструкции"
+        state: "Состояние"
+        total: "Итого по заказу"
+      spree/order/bill_address:
+        address1: "Улица"
+        city: "Город"
+        firstname: "Имя"
+        lastname: "Фамилия"
+        phone: "Телефон"
+        state: "Область/Регион"
+        zipcode: "Почтовый индекс"
+      spree/order/ship_address:
+        address1: "Улица"
+        city: "Город"
+        firstname: "Имя"
+        lastname: "Фамилия"
+        phone: "Телефон"
+        state: "Область/Регион"
+        zipcode: "Почтовый индекс"
+      spree/payment:
+        amount: "Количество"
+      spree/payment_method:
+        name: "Название"
+      spree/product:
+        available_on: "Доступен с"
+        cost_currency: "Валюта"
+        cost_price: "Себестоимость"
+        description: "Описание"
+        master_price: "Цена"
+        name: "Название"
+        on_hand: "На складе"
+        shipping_category: "Категория доставки"
+        tax_category: "Категория налогов"
+      spree/promotion:
+        advertise: "Рекламировать"
+        code: "Код"
+        description: "Описание"
+        event_name: "Название события"
+        expires_at: "Истекает в"
+        name: "Название"
+        path: "Путь"
+        starts_at: "Начинается"
+        usage_limit: "Лимит использования"
+      spree/promotion_category:
+        name: "Название"
+        code: "Код"
+      spree/property:
+        name: "Название"
+        presentation: "Представление"
+      spree/prototype:
+        name: "Название"
+      spree/return_authorization:
+        amount: "Сумма"
+      spree/role:
+        name: "Название"
+      spree/state:
+        abbr: "Аббревиатура"
+        name: "Название"
+      spree/state_change:
+        state_changes:
+        state_from:
+        state_to:
+        timestamp:
+        type:
+        updated:
+        user:
+      spree/store:
+        mail_from_address: "Отсылать почту как"
+        meta_description: Meta-описание
+        meta_keywords: Meta ключевые слова
+        name: "Название сайта"
+        seo_title: SEO-заголовок
+        url: URL-адрес сайта
+      spree/tax_category:
+        description: "Описание"
+        name: "Название"
+      spree/tax_rate:
+        amount: "Ставка"
+        included_in_price: "Включено в цену"
+        show_rate_in_label: "Показывать ставку в метке"
+      spree/taxon:
+        name: "Название"
+        permalink: "Постоянная ссылка"
+        position: "Позиция"
+      spree/taxonomy:
+        name: "Название"
+      spree/user:
+        email: Email
+        password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
+      spree/variant:
+        cost_currency: "Валюта"
+        cost_price: "Себестоимость"
+        depth: "Толщина"
+        height: "Высота"
+        price: "Цена"
+        sku: "Артикул"
+        weight: "Вес"
+        width: "Ширина"
+      spree/zone:
+        description: "Описание"
+        name: "Название"
+    errors:
+      models:
+        spree/calculator/tiered_flat_rate:
+          attributes:
+            base:
+              keys_should_be_positive_number:
+            preferred_tiers:
+              should_be_hash:
+        spree/calculator/tiered_percent:
+          attributes:
+            base:
+              keys_should_be_positive_number:
+              values_should_be_percent:
+            preferred_tiers:
+              should_be_hash:
+        spree/classification:
+          attributes:
+            taxon_id:
+              already_linked:
+        spree/credit_card:
+          attributes:
+            base:
+              card_expired: "Срок действия карты истек"
+              expiry_invalid:
+        spree/line_item:
+          attributes:
+            currency:
+              must_match_order_currency:
+        spree/refund:
+          attributes:
+            amount:
+              greater_than_allowed:
+        spree/reimbursement:
+          attributes:
+            base:
+              return_items_order_id_does_not_match:
+        spree/return_item:
+          attributes:
+            inventory_unit:
+              other_completed_return_item_exists:
+            reimbursement:
+              cannot_be_associated_unless_accepted:
+        spree/store:
+          attributes:
+            base:
+              cannot_destroy_default_store:
+    models:
+      spree/product_property:
+        one: Свойство продукта
+        other: Свойства продукта
+      spree/price:
+        one: Цена
+        other: Цены
+      spree/address:
+        many: "Адресов"
+        one: "Адрес"
+        other: "Адреса"
+      spree/country:
+        many: "Стран"
+        one: "Страна"
+        other: "Страны"
+      spree/credit_card:
+        many: "Кредитных карт"
+        one: "Кредитная карта"
+        other: "Кредитные карты"
+      spree/customer_return:
+        many: "Возвратов покупателю"
+        one: "Возврат покупателю"
+        other: "Возвраты покупателю"
+      spree/inventory_unit:
+        many: "Единиц"
+        one: "Единица"
+        other: "Единицы"
+      spree/line_item:
+        many: "Позиций"
+        one: "Позиция"
+        other: "Позиции"
+      spree/option_type:
+        many: "Товарных опций"
+        one: "Товарная опция"
+        other: "Товарные опции"
+      spree/option_value:
+      spree/order:
+        many: "Заказов"
+        one: "Заказ"
+        other: "Заказы"
+      spree/payment:
+        many: "Платежей"
+        one: "Платёж"
+        other: "Платежи"
+      spree/payment_method:
+        many: "Способов оплаты"
+        one: "Способ оплаты"
+        other: "Способы оплаты"
+      spree/product:
+        many: "Товаров"
+        one: "Товар"
+        other: "Товары"
+      spree/promotion:
+        many: "Акций"
+        one: "Акция"
+        other: "Акции"
+      spree/promotion_category:
+        many: "Категорий акций"
+        one: "Категория акций"
+        other: "Категории акций"
+      spree/property:
+        many: "Свойств"
+        one: "Свойство"
+        other: "Свойства"
+      spree/prototype:
+        many: "Прототипов"
+        one: "Прототип"
+        other: "Прототипы"
+      spree/refund_reason:
+        many: "Причин возврата"
+        one: "Причина возврата"
+        other: "Причины возврата"
+      spree/reimbursement:
+      spree/reimbursement_type:
+        many: "Типов возврата"
+        one: "Тип возврата"
+        other: "Типы возврата"
+      spree/return_authorization:
+        many: "Разрешений на возврат"
+        one: "Разрешение на возврат"
+        other: "Разрешения на возврат"
+      spree/return_authorization_reason:
+        many: "Причин разрешения на возврат"
+        one: "Причина разрешения на возврат"
+        other: "Причины разрешения на возврат"
+      spree/role:
+        many: "Ролей"
+        one: "Роль"
+        other: "Роли"
+      spree/shipment:
+        many: "Доставок"
+        one: "Доставка"
+        other: "Доставки"
+      spree/shipping_category:
+        many: "Категорий доставки"
+        one: "Категория доставки"
+        other: "Категории доставки"
+      spree/shipping_method:
+        many: Cпособов доставки
+        one: Cпособ доставки
+        other: Cпособы доставки
+      spree/state:
+        many: "Областей/Регионов"
+        one: "Область/Регион"
+        other: "Области/Регионы"
+      spree/state_change:
+      spree/stock_location:
+        many: "Расположений складов"
+        one: "Расположение склада"
+        other: "Расположения складов"
+      spree/stock_movement:
+      spree/stock_transfer:
+        many: "Перемещений по складам"
+        one: "Перемещение по складам"
+        other: "Перемещения по складам"
+      spree/tax_category:
+        many: "Категорий налогов"
+        one: "Категория налогов"
+        other: "Категории налогов"
+      spree/tax_rate:
+        many: "Ставок налога"
+        one: "Ставка налога"
+        other: "Ставки налога"
+      spree/taxon:
+        many: "Таксонов"
+        one: "Таксон"
+        other: "Таксона"
+      spree/taxonomy:
+        many: "Таксономий"
+        one: "Таксономия"
+        other: "Таксономии"
+      spree/tracker:
+        many: "Трекеров"
+        one: "Трекер"
+        other: "Трекеры"
+      spree/user:
+        many: "Пользователей"
+        one: "Пользователь"
+        other: "Пользователя"
+      spree/variant:
+        many: "Вариантов"
+        one: "Вариант"
+        other: "Варианты"
+      spree/zone:
+        many: "Зон"
+        one: "Зона"
+        other: "Зоны"

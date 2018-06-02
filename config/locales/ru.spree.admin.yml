@@ -1,0 +1,67 @@
+ru:
+  spree:
+    admin:
+      tab:
+        configuration: "Настройки"
+        option_types: "Товарные опции"
+        orders: "Заказы"
+        overview: "Обзор"
+        products: "Товары"
+        promotions: "Акции"
+        promotion_categories: "Категории акций"
+        properties: "Свойства"
+        prototypes: "Прототипы"
+        reports: "Отчёты"
+        taxonomies: "Таксономии"
+        taxons: "Таксоны"
+        users: "Пользователи"
+        cancel_inventory: Отмена заказа
+        settings: Настройки
+        stores: Магазин
+        payments: Способы оплаты
+        taxes: Категории налогов
+        checkout: Причины возврата
+        shipping: Cпособы доставки
+        zones: Зоны продаж
+        stock: Запасы
+        display_order: Cортировка товаров
+        rma: Возврат
+        adjustment: Управление
+      user:
+        account: "Учетная запись"
+        addresses: "Адреса"
+        items: "Товары"
+        items_purchased: "Купленные товары"
+        order_history: "История заказов"
+        order_num:
+        orders: "Заказы"
+        user_information: "Информация"
+      taxons:
+        display_order: Сортировка товаров
+      images:
+        index:
+          upload_images: Загрузка изображений
+          choose_files: Выберите файлы
+          drag_and_drop: Перетяните файлы сюда
+      variants:
+        table_filter:
+          show_deleted: Показать удаленные варианты
+        new:
+          new_variant: Новый вариант
+        edit:
+          edit_variant: Редактировать вариант
+        form:
+          dimensions: Размеры
+          use_product_tax_category: Оставить без изменений
+          pricing: Цена
+          pricing_hint: Эти значения заполняются на странице сведений о продукте и могут быть переопределены ниже
+      prices:
+        any_country: Все страны
+        index:
+          new_price: Новая цена
+          amount_greater_than: Кол-во больше чем
+          amount_less_than: Кол-во меньше чем
+        edit:
+          edit_price: Редактировать цену
+        new:
+          new_price: Новая цена
