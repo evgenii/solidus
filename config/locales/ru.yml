@@ -1,2 +1,8 @@
 ru:
-  spree:
+  # activemodel   =>  activemodel.ru.yml
+  # activerecord  =>  activerecord.ru.yml
+  # base          =>  base.ru.yml
+  # devise        =>  devise.ru.yml
+  # errors        =>  errors.ru.yml
+  # spree         =>  spree.ru.yml
+  # spree:admin   =>  spree.admin.ru.yml

@@ -1,0 +1,6 @@
+ru:
+  time:
+    formats:
+      solidus:
+        long: '%d %B, %Y %-k:%M'
+        short: "%-d %b '%y %-k:%M"

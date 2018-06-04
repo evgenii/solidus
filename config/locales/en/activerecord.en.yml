@@ -1,0 +1,689 @@
+en:
+  activerecord:
+    attributes:
+      spree/address:
+        address1: Street Address
+        address2: Street Address (cont'd)
+        city: City
+        company: Company
+        firstname: First Name
+        lastname: Last Name
+        phone: Phone
+        zipcode: Zip Code
+      spree/adjustment:
+        adjustable: Adjustable
+        amount: Amount
+        label: Label
+        name: Name
+        state: State
+        adjustment_reason_id: Reason
+      spree/adjustment_reason:
+        active: Active
+        code: Code
+        name: Name
+        state: State
+      spree/calculator/flat_rate:
+        preferred_amount: Amount
+      spree/calculator/tiered_flat_rate:
+        preferred_base_amount: Base Amount
+        preferred_currency: Currency
+        preferred_tiers: Tiers
+      spree/calculator/tiered_percent:
+        preferred_base_percent: Base Percent
+        preferred_currency: Currency
+        preferred_tiers: Tiers
+      spree/carton:
+        tracking: Tracking
+      spree/country:
+        iso: ISO
+        iso3: ISO3
+        iso_name: ISO Name
+        name: Name
+        numcode: ISO Code
+        states_required: States Required
+      spree/credit_card:
+        base: ''
+        cc_type: Brand
+        card_code: Card Code
+        expiration: Expiration
+        month: Month
+        name: Name
+        number: Card Number
+        verification_value: Verification Value
+        year: Year
+      spree/customer_return:
+        number: Return Number
+        pre_tax_total: Pre-Tax Total
+        total: Total
+        total_excluding_vat: Pre-Tax Total
+        created_at: "Date/Time"
+        reimbursement_status: Reimbursement status
+        name: Name
+      spree/image:
+        alt: Alternative Text
+        attachment: Filename
+      spree/inventory_unit:
+        state: State
+      spree/legacy_user:
+        email: Email
+        password: Password
+        password_confirmation: Password Confirmation
+        spree_roles: Roles
+      spree/line_item:
+        description: Item Description
+        name: Name
+        price: Price
+        quantity: Quantity
+        total: Total price
+      spree/option_type:
+        name: Name
+        presentation: Presentation
+      spree/option_value:
+        name: Name
+        presentation: Presentation
+      spree/order:
+        additional_tax_total: Tax
+        approved_at: Approved at
+        approver_id: Approver
+        canceled_at: Canceled at
+        canceler_id: Canceler
+        checkout_complete: Checkout Complete
+        completed_at: Completed At
+        coupon_code: Coupon Code
+        created_at: Order Date
+        email: Customer E-Mail
+        included_tax_total: Tax (incl.)
+        ip_address: IP Address
+        item_total: Item Total
+        number: Number
+        payment_state: Payment State
+        shipment_state: Shipment State
+        shipment_total: Ship Total
+        special_instructions: Special Instructions
+        state: State
+        total: Total
+        considered_risky: Risky
+      spree/order/bill_address:
+        address1: Billing address street
+        city: Billing address city
+        firstname: Billing address first name
+        lastname: Billing address last name
+        phone: Billing address phone
+        state: Billing address state
+        zipcode: Billing address zipcode
+      spree/order/ship_address:
+        address1: Shipping address street
+        city: Shipping address city
+        firstname: Shipping address first name
+        lastname: Shipping address last name
+        phone: Shipping address phone
+        state: Shipping address state
+        zipcode: Shipping address zipcode
+      spree/payment:
+        amount: Amount
+        created_at: Date/Time
+        number: Identifier
+        response_code: Transaction ID
+        state: State
+      spree/payment_method:
+        active: Active
+        auto_capture: Auto Capture
+        description: Description
+        display_on: Display
+        name: Name
+        preference_source: Preference Source
+        type: Type
+      spree/price:
+        currency: Currency
+        amount: Price
+        is_default: Currently Valid
+      spree/product:
+        available_on: Available On
+        cost_currency: Cost Currency
+        cost_price: Cost Price
+        description: Description
+        depth: Depth
+        height: Height
+        master_price: Master Price
+        meta_description: Meta Description
+        meta_keywords: Meta Keywords
+        meta_title: Meta Title
+        name: Name
+        on_hand: On Hand
+        price: Master Price
+        promotionable: Promotable
+        shipping_category: Shipping Category
+        slug: Slug
+        tax_category: Tax Category
+        weight: Weight
+        width: Width
+      spree/product_property:
+        value: Value
+      spree/promotion:
+        apply_automatically: Apply Automatically
+        code: Code
+        description: Description
+        event_name: Event Name
+        expires_at: End
+        name: Name
+        path: Path
+        per_code_usage_limit: Per code usage limit
+        promotion_uses: Promotion Uses
+        starts_at: Start
+        status: Status
+        usage_limit: Usage Limit
+      spree/promotion/actions/create_adjustment:
+        description: Creates a promotion credit adjustment on the order
+      spree/promotion/actions/create_item_adjustments:
+        description: Creates a promotion credit adjustment on a line item
+      spree/promotion/actions/create_quantity_adjustments:
+        description: Creates an adjustment on a line item based on quantity
+      spree/promotion/actions/free_shipping:
+        description: Makes all shipments for the order free
+      spree/promotion/rules/item_total:
+        description: Order total meets these criteria
+      spree/promotion/rules/first_order:
+        description: Must be the customer's first order
+      spree/promotion/rules/landing_page:
+          description: Customer must have visited the specified page
+      spree/promotion/rules/one_use_per_user:
+        description: Only One Use Per User
+      spree/promotion/rules/option_value:
+        description: Order includes specified product(s) with matching option value(s)
+      spree/promotion/rules/product:
+        description: Order includes specified product(s)
+      spree/promotion/rules/user:
+        description: Available only to the specified users
+      spree/promotion/rules/user_logged_in:
+        description: Available only to logged in users
+      spree/promotion/rules/taxon:
+        description: Order includes products with specified taxon(s)
+      spree/promotion/rules/nth_order:
+        description: Apply a promotion to every nth order a user has completed.
+        form_text: "Apply this promotion on the users Nth order: "
+      spree/promotion/rules/first_repeat_purchase_since:
+        description: Available only to user who have not purchased in a while
+        form_text: "Apply this promotion to users whose last order was more than X days ago: "
+      spree/promotion/rules/user_role:
+        description: Order includes User with specified Role(s)
+      spree/promotion/rules/store:
+        description: Available only to the specified stores
+      spree/promotion_category:
+        name: Name
+      spree/property:
+        name: Name
+        presentation: Presentation
+      spree/refund:
+        amount: Amount
+        description: Description
+        refund_reason_id: Reason
+      spree/refund_reason:
+        active: Active
+        name: Name
+        code: Code
+      spree/reimbursement:
+        created_at: "Date/Time"
+        number: Number
+        reimbursement_status: Status
+        total: Total
+      spree/reimbursement/credit:
+        amount: Amount
+      spree/reimbursement_type:
+        name: Name
+        type: Type
+        created_at: "Date/Time"
+      spree/return_authorization:
+        amount: Amount
+        pre_tax_total: Pre-Tax Total
+        total_excluding_vat: Pre-Tax Total
+      spree/return_item:
+        acceptance_status: Acceptance status
+        acceptance_status_errors: Acceptance errors
+        amount: Amount Before Sales Tax
+        charged: Charged
+        exchange_variant: Exchange for
+        inventory_unit_state: State
+        item_received?: "Item Received?"
+        override_reimbursement_type_id: Reimbursement Type Override
+        preferred_reimbursement_type_id: Preferred Reimbursement Type
+        reception_status: Reception Status
+        resellable: "Resellable?"
+        return_reason: Reason
+        total: Total
+      spree/return_reason:
+        name: Name
+        active: Active
+        created_at: "Date/Time"
+        memo: Memo
+        number: RMA Number
+        state: State
+      spree/role:
+        name: Name
+      spree/shipping_category:
+        name: Name
+      spree/shipment:
+        tracking: Tracking Number
+      spree/shipping_method:
+        admin_name: Internal Name
+        carrier: Carrier
+        code: Code
+        display_on: Display
+        name: Name
+        service_level: Service Level
+        tracking_url: Tracking URL
+      spree/shipping_rate:
+        label: Label
+        tax_rate: Tax Rate
+        shipping_rate: Shipping Rate
+        amount: Amount
+      spree/state:
+        abbr: Abbreviation
+        name: Name
+      spree/store:
+        url: Site URL
+        default: Default
+        meta_description: Meta Description
+        meta_keywords: Meta Keywords
+        seo_title: Seo Title
+        name: Site Name
+        mail_from_address: Mail From Address
+        cart_tax_country_iso: Tax Country for Empty Carts
+        available_locales: Locales available in the storefront
+      spree/store_credit:
+        amount: Amount
+        amount_authorized: Amount Authorized
+        amount_credited: Amount Credited
+        amount_used: Amount Used
+        category_id: Credit Type
+        created_at: Issued On
+        created_by_id: Created By
+        invalidated_at: Invalidated
+        memo: Memo
+      spree/store_credit_event:
+        action: Action
+        amount_remaining: Total Unused
+        user_total_amount: Total Amount
+      spree/store_credit_update_reason:
+        name: Reason For Updating
+      spree/stock_item:
+        count_on_hand: Count On Hand
+      spree/stock_location:
+        admin_name: Internal Name
+        active: Active
+        address1: Street Address
+        address2: Street Address (cont'd)
+        backorderable_default: Backorderable default
+        check_stock_on_transfer: Check stock on transfer
+        city: City
+        code: Code
+        country_id: Country
+        default: Default
+        fulfillable: Fulfillable
+        internal_name: Internal Name
+        name: Name
+        phone: Phone
+        propagate_all_variants: Propagate all variants
+        restock_inventory: Restock Inventory
+        state_id: State
+        zipcode: Zip
+      spree/stock_movement:
+        originated_by: Originated By
+        quantity: Quantity
+        variant: Variant
+      spree/tax_category:
+        description: Description
+        name: Name
+        is_default: Default
+        tax_code: Tax Code
+      spree/tax_rate:
+        amount: Rate
+        included_in_price: Included In Price
+        name: Name
+        show_rate_in_label: Show Rate In Label
+        starts_at: Start date
+        expires_at: Expiration date
+      spree/taxon:
+        description: Description
+        icon: Icon
+        meta_description: Meta Description
+        meta_keywords: Meta Keywords
+        meta_title: Meta Title
+        name: Name
+        permalink: Permalink
+        position: Position
+      spree/taxonomy:
+        name: Name
+      spree/tracker:
+        analytics_id: Analytics ID
+        active: Active
+      spree/user:
+        email: Email
+        password: Password
+        password_confirmation: Password Confirmation
+        spree_roles: Roles
+        lifetime_value: Total spent
+      spree/variant:
+        cost_currency: Cost Currency
+        cost_price: Cost Price
+        depth: Depth
+        height: Height
+        price: Price
+        sku: SKU
+        tax_category: Variant tax category
+        weight: Weight
+        width: Width
+      spree/zone:
+        description: Description
+        name: Name
+    models:
+      # LegacyUser maps to this model_name so we want to provide translations for it
+      user:
+        one: User
+        other: Users
+      spree/address:
+        one: Address
+        other: Addresses
+      spree/adjustment:
+        one: Adjustment
+        other: Adjustments
+      spree/adjustment_reason:
+        one: Adjustment Reason
+        other: Adjustment Reasons
+      spree/calculator:
+        one: Base Calculator
+        other: Base Calculators
+      spree/calculator/default_tax:
+        one: Default Tax
+        other: Default Tax
+      spree/calculator/distributed_amount:
+        one: Distributed Amount
+        other: Distributed Amount
+      spree/calculator/flat_percent_item_total:
+        one: Flat Percent
+        other: Flat Percent
+      spree/calculator/flat_rate:
+        one: Flat Rate
+        other: Flat Rate
+      spree/calculator/flexi_rate:
+        one: Flexible Rate
+        other: Flexible Rate
+      spree/calculator/free_shipping:
+        one: Free Shipping
+        other: Free Shipping
+      spree/calculator/percent_on_line_item:
+        one: Percent Per Item
+        other: Percent Per Item
+      spree/calculator/percent_per_item:
+        one: Percent Per Item
+        other: Percent Per Item
+      spree/calculator/price_sack:
+        one: Price Sack
+        other: Price Sack
+      spree/calculator/tiered_percent:
+        one: Tiered Percent
+        other: Tiered Percent
+      spree/calculator/tiered_flat_rate:
+        one: Tiered Flat Rate
+        other: Tiered Flat Rate
+      spree/calculator/returns/default_refund_amount:
+        one: Default Refund Amount
+        other: Default Refund Amount
+      spree/calculator/shipping/flat_percent_item_total:
+        one: Flat Percent
+        other: Flat Percent
+      spree/calculator/shipping/flat_rate:
+        one: Flat rate
+        other: Flat rate
+      spree/calculator/shipping/flexi_rate:
+        one: Flexible Rate per package item
+        other: Flexible Rate per package item
+      spree/calculator/shipping/per_item:
+        one: Flat rate per package item
+        other: Flat rate per package item
+      spree/calculator/shipping/price_sack:
+        one: Price sack
+        other: Price sack
+      spree/country:
+        one: Country
+        other: Countries
+      spree/credit_card:
+        one: Credit Card
+        other: Credit Cards
+      spree/customer_return:
+        one: Customer Return
+        other: Customer Returns
+      spree/exchange:
+        one: Exchange
+        other: Exchanges
+      spree/image:
+        one: Image
+        other: Images
+      spree/inventory_unit:
+        one: Inventory Unit
+        other: Inventory Units
+      spree/legacy_user:
+        one: User
+        other: Users
+      spree/line_item:
+        one: Line Item
+        other: Line Items
+      spree/log_entry:
+        one: Log Entry
+        other: Log Entries
+      spree/option_type:
+        one: Option Type
+        other: Option Types
+      spree/option_value:
+        one: Option Value
+        other: Option Values
+      spree/order:
+        one: Order
+        other: Orders
+      spree/payment:
+        one: Payment
+        other: Payments
+      spree/payment_capture_event:
+        one: Capture Event
+        other: Capture Events
+      spree/payment_method:
+        one: Payment Method
+        other: Payment Methods
+      spree/payment_method/check: Check Payments
+      spree/payment_method/store_credit: Store Credit Payments
+      spree/payment_method/bogus_credit_card: Bogus Credit Card Payments
+      spree/payment_method/simple_bogus_credit_card: Simple Bogus Credit Card Payments
+      spree/price:
+        one: Price
+        other: Prices
+      spree/product:
+        one: Product
+        other: Products
+      spree/product_property:
+        one: Product Property
+        other: Product Properties
+      spree/promotion:
+        one: Promotion
+        other: Promotions
+      spree/promotion/actions/create_adjustment: Create whole-order adjustment
+      spree/promotion/actions/create_item_adjustments: Create per-line-item adjustment
+      spree/promotion/actions/create_quantity_adjustments: Create per-quantity adjustment
+      spree/promotion/actions/free_shipping: Free shipping
+      spree/promotion/rules/first_order: First order
+      spree/promotion/rules/item_total: Item total
+      spree/promotion/rules/landing_page: Landing Page
+      spree/promotion/rules/one_use_per_user: One Use Per User
+      spree/promotion/rules/option_value: Option Value(s)
+      spree/promotion/rules/product: Product(s)
+      spree/promotion/rules/user: User
+      spree/promotion/rules/user_logged_in: User Logged In
+      spree/promotion/rules/taxon: Taxon(s)
+      spree/promotion/rules/nth_order: Nth Order
+      spree/promotion/rules/first_repeat_purchase_since: First Repeat Purchase Since
+      spree/promotion/rules/user_role: User Role(s)
+      spree/promotion_category:
+        one: Promotion Category
+        other: Promotion Categories
+      spree/promotion_code_batch:
+        one: Promotion Code Batch
+        other: Promotion Code Batches
+      spree/promotion_code:
+        one: Promotion Code
+        other: Promotion Codes
+      spree/property:
+        one: Property Type
+        other: Property Types
+      spree/refund:
+        one: Refund
+        other: Refunds
+      spree/refund_reason:
+        one: Refund Reason
+        other: Refund Reasons
+      spree/reimbursement:
+        one: Reimbursement
+        other: Reimbursements
+      spree/reimbursement_type:
+        one: Reimbursement Type
+        other: Reimbursement Types
+      spree/return_authorization:
+        one: Return Authorization
+        other: Return Authorizations
+      spree/return_reason:
+        one: RMA Reason
+        other: RMA Reasons
+      spree/role:
+        one: Roles
+        other: Roles
+      spree/shipment:
+        one: Shipment
+        other: Shipments
+      spree/shipping_category:
+        one: Shipping Category
+        other: Shipping Categories
+      spree/shipping_method:
+        one: Shipping Method
+        other: Shipping Methods
+      spree/state:
+        one: State
+        other: States
+      spree/stock: stock
+      spree/stock_item:
+        one: Stock Item
+        other: Stock Items
+      spree/stock_movement:
+        one: Stock Movement
+        other: Stock Movements
+      spree/stock_location:
+        one: Stock Location
+        other: Stock Locations
+      spree/store:
+        one: Store
+        other: Stores
+      spree/store_credit:
+        one: Store Credit
+        other: Store Credits
+      spree/store_credit_category:
+        one: Category
+        other: Categories
+      spree/tax_category:
+        one: Tax Category
+        other: Tax Categories
+      spree/tax_rate:
+        one: Tax Rate
+        other: Tax Rates
+      spree/taxon:
+        one: Taxon
+        other: Taxons
+      spree/taxonomy:
+        one: Taxonomy
+        other: Taxonomies
+      spree/tracker:
+        one: Analytics Tracker
+        other: Analytics Trackers
+      spree/user:
+        one: User
+        other: Users
+      spree/variant:
+        one: Variant
+        other: Variants
+      spree/zone:
+        one: Zone
+        other: Zones
+    errors:
+      models:
+        spree/address:
+          attributes:
+            state:
+              does_not_match_country: does not match the country
+        spree/calculator/tiered_flat_rate:
+          attributes:
+            base:
+              keys_should_be_positive_number: "Tier keys should all be numbers larger than 0"
+            preferred_tiers:
+              should_be_hash: "should be a hash"
+        spree/calculator/tiered_percent:
+          attributes:
+            base:
+              keys_should_be_positive_number: "Tier keys should all be numbers larger than 0"
+              values_should_be_percent: "Tier values should all be percentages between 0% and 100%"
+            preferred_tiers:
+              should_be_hash: "should be a hash"
+        spree/classification:
+          attributes:
+            taxon_id:
+              already_linked: "is already linked to this product"
+        spree/credit_card:
+          attributes:
+            base:
+              card_expired: "Card has expired"
+              expiry_invalid: "Card expiration is invalid"
+        spree/inventory_unit:
+          attributes:
+            state:
+              cannot_destroy: "Cannot destroy a %{state} inventory unit"
+            base:
+              cannot_destroy_shipment_state: "Cannot destroy an inventory unit for a %{state} shipment"
+        spree/line_item:
+          attributes:
+            price:
+              not_a_number: "is not valid"
+        spree/price:
+          attributes:
+            currency:
+              invalid_code: "is not a valid currency code"
+        spree/promotion:
+          attributes:
+            apply_automatically:
+              disallowed_with_code: Disallowed for promotions with a code
+              disallowed_with_path: Disallowed for promotions with a path
+        spree/refund:
+          attributes:
+            amount:
+              greater_than_allowed: is greater than the allowed amount.
+        spree/reimbursement:
+          attributes:
+            base:
+              return_items_order_id_does_not_match: One or more of the return items specified do not belong to the same order as the reimbursement.
+        spree/return_item:
+          attributes:
+            reimbursement:
+              cannot_be_associated_unless_accepted: cannot be associated to a return item that is not accepted.
+            inventory_unit:
+              other_completed_return_item_exists: "%{inventory_unit_id} has already been taken by return item %{return_item_id}"
+        spree/shipment:
+          attributes:
+            state:
+              cannot_destroy: "Cannot destroy a %{state} shipment"
+            base:
+              cannot_remove_items_shipment_state: "Cannot remove items from a %{state} shipment"
+        spree/store:
+          attributes:
+            base:
+              cannot_destroy_default_store: Cannot destroy the default Store.
+        spree/user_address:
+          attributes:
+            user_id:
+              default_address_exists: "already has a default address"
+        spree/wallet_payment_source:
+          attributes:
+            payment_source:
+              has_to_be_payment_source_class: "has to be a Spree::PaymentSource"

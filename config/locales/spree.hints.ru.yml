@@ -1,0 +1,32 @@
+ru:
+  spree:
+    hints:
+      spree/price:
+        country: "This determines in what country the price is valid.<br/>Default: Any Country"
+        master_variant: "Changing master variant prices will not change variant prices below, but will be used to populate all new variants"
+        options: "These options are used to create variants in the variants table. They can be changed in the variants tab"
+      spree/product:
+        available_on: "This sets the availability date for the product. If this value is not set, or it is set to a date in the future, then the product is not available on the storefront."
+        promotionable: "This determines whether or not promotions can apply to this product.<br/>Default: Checked"
+        shipping_category: "This determines what kind of shipping this product requires.<br/> Default: Default"
+        tax_category: "This determines what kind of taxation is applied to this product.<br/> Default: None"
+      spree/promotion:
+        starts_at: "This determines when the promotion can be applied to orders. <br/> If no value is specified, the promotion will be immediately available."
+        expires_at: "This determines when the promotion expires. <br/> If no value is specified, the promotion will never expire."
+      spree/stock_location:
+        active: "This determines whether stock from this location can be used when building packages.<br/> Default: Checked"
+        backorderable_default: "When checked, stock items in this location will default to allowing backorders.<br/> Default: Unchecked"
+        propagate_all_variants: "When checked, this will create a stock item for in this stock location.<br/> Default: Checked"
+        restock_inventory: "When checked, returned inventory can be added back to this location's stock levels.<br/> Default: checked"
+        fulfillable: "When unchecked, this indicates that items in this location don't require actual fulfilment. Stock will not be checked when shipping and emails will not be sent.<br/> Default: Checked"
+        check_stock_on_transfer: "When checked, inventory levels will be checked when performing stock transfers.<br/> Default: Checked"
+      spree/store:
+        cart_tax_country_iso: "This determines which country is used for taxes on carts (orders which don't yet have an address).<br/> Default: None."
+        available_locales: "This determines which locales are available for your customers to choose from in the storefront."
+      spree/variant:
+        tax_category: "This determines what kind of taxation is applied to this variant.<br/> Default: Use tax category of the product associated with this variant"
+        deleted: "Deleted Variant"
+        deleted_explanation: "This variant was deleted on %{date}."
+        deleted_explanation_with_replacement: "This variant was deleted on %{date}. It has since been replaced by another with the same SKU."
+      spree/tax_rate:
+        validity_period: "This determines the validity period within which the tax rate is valid and will be applied to eligible items. <br /> If no start date value is specified, the tax rate will be immediately available. <br /> If no expiration date value is specified, the tax rate will never expire"

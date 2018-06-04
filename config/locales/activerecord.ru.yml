@@ -1,6 +1,9 @@
 ru:
   activerecord:
     attributes:
+      spree/image:
+        alt: Описание
+        attachment: Имя файла
       spree/product_property:
         value: Значение
       spree/price:
@@ -89,9 +92,19 @@ ru:
         description: "Описание"
         master_price: "Цена"
         name: "Название"
+        slug: Идентификатор
         on_hand: "На складе"
         shipping_category: "Категория доставки"
         tax_category: "Категория налогов"
+        depth: Глубина
+        height: Высота
+        width: Ширена
+        weight: Вес
+        meta_description: Описание страници
+        meta_keywords: Ключевые слова на странице
+        meta_title: Заголовок страници
+        price: Основная цена
+        promotionable: Промо
       spree/promotion:
         advertise: "Рекламировать"
         code: "Код"
@@ -207,6 +220,25 @@ ru:
           attributes:
             base:
               cannot_destroy_default_store:
+      spree/stock_location:
+        admin_name: Внутренее название
+        active: Активен
+        backorderable_default: Значение по умолчанию
+        check_stock_on_transfer: Проверять наличие
+        city: Город
+        code: Код
+        country_id: Страна
+        state_id: Штат
+        zipcode: Индекс
+        address1: Адрес1
+        address2: Адрес2
+        default: Осн.
+        fulfillable: Выполнимый
+        internal_name: Внутренее имя
+        name: Имя
+        phone: Телефон
+        propagate_all_variants: Предлагать варианты
+        restock_inventory:
     models:
       spree/product_property:
         one: Свойство продукта

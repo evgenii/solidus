@@ -12,62 +12,18 @@ ru:
     no_resource_found_html: '%{resource} не найдены, %{add_one_link}!'
     no_resource_found_link: Добавить
     create_one: Создать.
-    created_at: Создано в
     created_by: Создано
     no_option_values_on_product_html: "Этот продукт не имеет связанных значений опций. Добавьте некоторые из них через типы опций в %{link}."
     add_taxon: Добавить таксон
-    back_to_adjustments_list: Назад к cписку изменений
-    back_to_adjustment_reason_list: Назад к cписку причин изменений
-    back_to_countries_list: Назад к cписку стран
-    back_to_customer_return: Назад к Customer Return
-    back_to_customer_return_list: Назад к Customer Return List
-    back_to_images_list: Назад к списку изображений
-    back_to_option_types_list: Назад к Option Types List
-    back_to_orders_list: Назад к списку заказов
-    back_to_payment: Назад к оплате
-    back_to_payment_methods_list: Назад к списку методов оплаты
-    back_to_payments_list: Назад к списку платежей
-    back_to_products_list: Назад к списку продуктов
-    back_to_promotions_list: Назад к кписоку рекламных акций
-    back_to_promotion_categories_list: Назад к списку категорий поощрений
-    back_to_properties_list: Назад к Property Types List
-    back_to_reports_list: Назад к списку отчетов
-    back_to_refund_reason_list: Назад к списку причин возврата средств
-    back_to_reimbursement_type_list: Назад к списку видов возмещения
-    back_to_return_authorizations_list: Назад к RMA List
-    back_to_rma_reason_list: Назад к RMA Reason List
-    back_to_shipping_categories: Назад к категории перевозкы груза
-    back_to_shipping_categories_list: Назад к списку категорий перевозкы груза
-    back_to_shipping_methods_list: Назад к списку методов доставки
-    back_to_states_list: Назад к списку стран
-    back_to_stock_locations_list: Назад к списку складов
-    back_to_stock_movements_list: Назад к списку перемещения заказов
-    back_to_store: В магазин
-    back_to_tax_categories_list: Назад к списку кстегории налогов
-    back_to_tax_rates_list: Назад к списку налоговых ставок
-    back_to_taxonomies_list: Назад к списку таксономий
-    back_to_trackers_list: Назад к списку трекеров
-    back_to_users_list: Назад к скиску пользователей
-    back_to_zones_list: Назад к списку зон
-    master_price: Осн. Цена
     master_variant: Осн. Вариант
     variant_pricing: Цена на Варианты
     variant_properties: Варианты свойств
     manage_stock: Управление запасами
     no_images_found: Изображения не найдены
-    skus: Варинаты
-    info_product_has_multiple_skus: Доступно %{count}
-    manage_variants: Управлять вариантами
-    countries: Страны
-    country: Страна
-    country_based: Страна
-    country_name: Название
-    country_names:
-      UA: Украина
     inventory_states:
       backordered: Освобождается
       canceled: Отменен
-      on_hand: Под рукой
+      on_hand: На складе
       returned: Возвращен
       shipped: Доставлен
     abbreviation: "Аббревиатура"
@@ -125,42 +81,6 @@ ru:
     adjustment_successfully_opened: "Корректировка была успешно открыта!"
     adjustment_total: "Итого (коррект.)"
     adjustments: "Корректировки"
-    admin:
-      tab:
-        configuration: "Настройки"
-        option_types: "Товарные опции"
-        orders: "Заказы"
-        overview: "Обзор"
-        products: "Товары"
-        promotions: "Акции"
-        promotion_categories: "Категории акций"
-        properties: "Свойства"
-        prototypes: "Прототипы"
-        reports: "Отчёты"
-        taxonomies: "Таксономии"
-        taxons: "Таксоны"
-        users: "Пользователи"
-        cancel_inventory: Отмена заказа
-        settings: Настройки
-        stores: Магазин
-        payments: Способы оплаты
-        taxes: Категории налогов
-        checkout: Причины возврата
-        shipping: Cпособы доставки
-        zones: Зоны продаж
-        stock: Запасы
-        display_order: Cортировка товаров
-        rma: Возврат
-        adjustment: Управление
-      user:
-        account: "Учетная запись"
-        addresses: "Адреса"
-        items: "Товары"
-        items_purchased: "Купленные товары"
-        order_history: "История заказов"
-        order_num:
-        orders: "Заказы"
-        user_information: "Информация"
     administration: "Администрирование"
     advertise:
     agree_to_privacy_policy: "Согласиться с Политикой Конфиденциальности"
@@ -200,7 +120,36 @@ ru:
     avs_response:
     back: "Назад"
     back_end: "в администраторском интерфейсе"
-    back_to_payment:
+    back_to_adjustments_list: Назад к cписку изменений
+    back_to_adjustment_reason_list: Назад к cписку причин изменений
+    back_to_countries_list: Назад к cписку стран
+    back_to_customer_return: Назад к Customer Return
+    back_to_customer_return_list: Назад к Customer Return List
+    back_to_images_list: Назад к списку изображений
+    back_to_option_types_list: Назад к Option Types List
+    back_to_orders_list: Назад к списку заказов
+    back_to_payment: Назад к оплате
+    back_to_payment_methods_list: Назад к списку методов оплаты
+    back_to_payments_list: Назад к списку платежей
+    back_to_products_list: Назад к списку продуктов
+    back_to_promotions_list: Назад к кписоку рекламных акций
+    back_to_promotion_categories_list: Назад к списку категорий поощрений
+    back_to_properties_list: Назад к Property Types List
+    back_to_reports_list: Назад к списку отчетов
+    back_to_refund_reason_list: Назад к списку причин возврата средств
+    back_to_reimbursement_type_list: Назад к списку видов возмещения
+    back_to_return_authorizations_list: Назад к RMA List
+    back_to_shipping_categories: Назад к категории перевозкы груза
+    back_to_shipping_categories_list: Назад к списку категорий перевозкы груза
+    back_to_shipping_methods_list: Назад к списку методов доставки
+    back_to_states_list: Назад к списку стран
+    back_to_stock_locations_list: Назад к списку складов
+    back_to_stock_movements_list: Назад к списку перемещения заказов
+    back_to_tax_categories_list: Назад к списку кстегории налогов
+    back_to_tax_rates_list: Назад к списку налоговых ставок
+    back_to_taxonomies_list: Назад к списку таксономий
+    back_to_trackers_list: Назад к списку трекеров
+    back_to_zones_list: Назад к списку зон
     back_to_resource_list: "Назад к списку"
     back_to_rma_reason_list: "Назад к списку причин разрешения на возврат"
     back_to_store: "Вернуться в магазин"
@@ -274,10 +223,9 @@ ru:
     country_based: "Страна"
     country_name: "Имя"
     country_names:
-      CA:
-      FRA:
-      ITA:
-      US:
+      UA: Украина
+      CA: Канада
+      US: США
     coupon: "Купон"
     coupon_code: "Код купона"
     coupon_code_already_applied: "Скидочный купон уже был применен к этому заказу"
@@ -455,7 +403,7 @@ ru:
     included_price_validation: "не может быть выбрано, если только вы настроили зону налогообложения по умолчанию"
     incomplete:
     info_number_of_skus_not_shown:
-    info_product_has_multiple_skus:
+    info_product_has_multiple_skus: Доступно %{count}
     instructions_to_reset_password: "Чтобы сбросить пароль, заполните форму ниже. Новый пароль будет отправлен вам по указанному email"
     insufficient_stock: "Недостаточно единиц товара, только %{on_hand} есть в наличии"
     insufficient_stock_lines_present:
@@ -513,9 +461,9 @@ ru:
     make_refund: "Сделать возврат"
     make_sure_the_above_reimbursement_amount_is_correct:
     manage_promotion_categories:
-    manage_variants:
+    manage_variants: Управлять вариантами
     manual_intervention_required:
-    master_price: "Основная цена"
+    master_price: Осн. Цена
     match_choices:
       all: "Всем"
       none: "Ни одному"
@@ -524,7 +472,7 @@ ru:
     memo:
     meta_description: "Описание"
     meta_keywords: "Ключевые слова"
-    meta_title:
+    meta_title: Заголовок страници
     metadata: "Метаданные"
     minimal_amount: "Минимальная сумма"
     month: "Месяц"
@@ -708,7 +656,7 @@ ru:
     previous_state_missing:
     price: "Цена"
     price_range: "Ценовой диапазон"
-    price_sack: Price Sack
+    price_sack: Опт
     process: "Обработать"
     product: "Товар"
     product_details: "Описание товара"
@@ -928,11 +876,11 @@ ru:
     show: "Показать"
     show_active: "Показать активные"
     show_deleted: "Показать удаленные"
-    show_only_complete_orders: "Показывать только завершённые заказы"
+    show_only_complete_orders: "Только завершённые заказы"
     show_only_considered_risky:
     show_rate_in_label: "Показывать процент в названии"
     sku: "Артикул"
-    skus:
+    skus: Варинаты
     slug: "Ссылка"
     source: "Источник"
     special_instructions: "Дополнительные инструкции"
@@ -1044,7 +992,7 @@ ru:
     total: "Итого"
     total_per_item:
     total_pre_tax_refund:
-    total_price:
+    total_price: "Итого"
     total_sales: "Всего продано на"
     track_inventory: "Отслеживать наличие"
     tracking: "Отслеживание"

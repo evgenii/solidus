@@ -1,0 +1,8 @@
+en:
+  # activemodel   =>  activemodel.en.yml
+  # activerecord  =>  activerecord.en.yml
+  # base          =>  base.en.yml
+  # devise        =>  devise.en.yml
+  # errors        =>  errors.en.yml
+  # spree         =>  spree.en.yml
+  # spree:admin   =>  spree.admin.en.yml
