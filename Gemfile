@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'dotenv'
+gem 'dotenv-rails'
+
 gem 'solidus'
 gem 'solidus_auth_devise'
 gem 'solidus_i18n', '~> 2.0'

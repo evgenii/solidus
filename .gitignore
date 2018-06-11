@@ -19,7 +19,7 @@
 /public/spree/**/*
 /config/database.yml
 
+.env.*
 .byebug_history
 *.sublime-project
 *.sublime-workspace
-
