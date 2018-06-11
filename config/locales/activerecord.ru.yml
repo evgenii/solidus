@@ -1,11 +1,81 @@
 ru:
   activerecord:
     attributes:
+      spree/stock_movement:
+        variant: Товар
+        quantity: Количество
+        originated_by: Заказан
+      spree/shipping_category:
+        name: Название
+      spree/stock_location:
+        name: Название
+        admin_name: Имя администратора
+        default: Исп. как основной
+        position: Росположение
+        address1: Адрес (осн.)
+        address2: Адрес (доп.)
+        city: Город
+        state_id: Состояние
+        state_name:
+        country_id: Страна
+        zipcode: Почт. индекс
+        phone: Телефон
+        active: Активен?
+        code: Код
+        restock_inventory: Переиспользование товара?
+        backorderable_default: Доступен для предзаказа?
+        propagate_all_variants: Доступен для продажи?
+        fulfillable: Всегда в наличии?
+        check_stock_on_transfer: Пров. доступность перед отправкой
+      spree/shipping_method:
+        name: Название
+        deleted_at: Дата удаления
+        tracking_url: URL отслеживания
+        admin_name: Имя администратора
+        tax_category_id:
+        code: Персональный код
+        carrier:
+        service_level:
+        available_to_all: Доступен всем
+        available_to_users: Доступен пользователю
+      spree/return_reason:
+        name: Название
+        active: Активена
+      spree/refund_reason:
+        name: Название
+        code: Код
+        active: Активен
+        state: Состояние
+      spree/adjustment_reason:
+        name: Название
+        code: Код
+        active: Активен
       spree/image:
         alt: Описание
         attachment: Имя файла
+      spree/return_item:
+        acceptance_status: Состояние возврата
+        acceptance_status_errors: Причита возврата
+        amount: Цена без налога
+        charged: Charged
+        exchange_variant: Обмен на
+        inventory_unit_state: Состояние товара
+        item_received?: "Товар отправлен?"
+        override_reimbursement_type_id: Reimbursement Type Override
+        preferred_reimbursement_type_id: Preferred Reimbursement Type
+        reception_status: Состоние получения
+        resellable: "Перепродать?"
+        return_reason: Причина
+        total: Итого
       spree/product_property:
         value: Значение
+      spree/adjustment:
+        adjustable: Корр.
+        amount: Стоимость
+        label: Метка
+        name: Нащвание
+        state: Состояние
+        adjustment_reason_id: Причина
       spree/price:
         currency: Валюта
         amount: Цена
@@ -83,8 +153,26 @@ ru:
         zipcode: "Почтовый индекс"
       spree/payment:
         amount: "Количество"
+        order_id: Заказ
+        # source_type:
+        # source_id:
+        payment_method_id: Метод оплаты
+        state: Состояние
+        # response_code:
+        # avs_response:
+        # number:
+        # cvv_response_code:
+        # cvv_response_message:
       spree/payment_method:
-        name: "Название"
+        name: Название
+        active: Активен
+        auto_capture: Авто подстановка
+        description: Описание
+        display_on: Отображать на
+        preference_source: Компания посредник
+        available_to_users: Доступен пользователям
+        available_to_admin: Доступен администраторам
+        type: Тип
       spree/product:
         available_on: "Доступен с"
         cost_currency: "Валюта"
@@ -145,13 +233,22 @@ ru:
         name: "Название сайта"
         seo_title: SEO-заголовок
         url: URL-адрес сайта
+        default_currency: Осн. валюта
+        cart_tax_country_iso: Осн. налоговая ставка
+        available_locales: Доступные локали
+        code: Код
       spree/tax_category:
-        description: "Описание"
         name: "Название"
+        description: "Описание"
+        tax_code: Код налога
+        is_default: Осн.
       spree/tax_rate:
         amount: "Ставка"
         included_in_price: "Включено в цену"
         show_rate_in_label: "Показывать ставку в метке"
+        name: Название
+        starts_at: Дата начала
+        expires_at: Дата окончания
       spree/taxon:
         name: "Название"
         permalink: "Постоянная ссылка"
@@ -219,31 +316,39 @@ ru:
         spree/store:
           attributes:
             base:
-              cannot_destroy_default_store:
-      spree/stock_location:
-        admin_name: Внутренее название
-        active: Активен
-        backorderable_default: Значение по умолчанию
-        check_stock_on_transfer: Проверять наличие
-        city: Город
-        code: Код
-        country_id: Страна
-        state_id: Штат
-        zipcode: Индекс
-        address1: Адрес1
-        address2: Адрес2
-        default: Осн.
-        fulfillable: Выполнимый
-        internal_name: Внутренее имя
-        name: Имя
-        phone: Телефон
-        propagate_all_variants: Предлагать варианты
-        restock_inventory:
+              cannot_destroy_default_store: Невозможно удалить основной магазин
     models:
+      spree/reimbursement:
+      spree/state_change:
+        many: Изменений состояния
+        one: Изменение состояния
+        other: Изменения состояния
+      spree/option_value:
+        many: Значений
+        one: Значение
+        other: Значения
+      spree/stock_location:
+        many: Калькуляторов
+        one: Калькулятор
+        other: Калькуляторы
+      spree/calculator:
+        many: Калькуляторов
+        one: Калькулятор
+        other: Калькуляторы
+      spree/adjustment:
+        many: Калькуляторовок
+        one: Корректировка
+        other: Корректировки
+      spree/adjustment_reason:
+        many: Причин корректир.
+        one: Причина корректир.
+        other: Причины корректир.
       spree/product_property:
+        many: Свойств продукта
         one: Свойство продукта
         other: Свойства продукта
       spree/price:
+        many: Цен
         one: Цена
         other: Цены
       spree/address:
@@ -274,7 +379,6 @@ ru:
         many: "Товарных опций"
         one: "Товарная опция"
         other: "Товарные опции"
-      spree/option_value:
       spree/order:
         many: "Заказов"
         one: "Заказ"
@@ -308,10 +412,9 @@ ru:
         one: "Прототип"
         other: "Прототипы"
       spree/refund_reason:
-        many: "Причин возврата"
-        one: "Причина возврата"
-        other: "Причины возврата"
-      spree/reimbursement:
+        many: "Причин обмена"
+        one: "Причина обмена"
+        other: "Причины обмена"
       spree/reimbursement_type:
         many: "Типов возврата"
         one: "Тип возврата"
@@ -320,6 +423,10 @@ ru:
         many: "Разрешений на возврат"
         one: "Разрешение на возврат"
         other: "Разрешения на возврат"
+      spree/return_reason:
+        many: "Причин возврата"
+        one: "Причина возврата"
+        other: "Причины возврата"
       spree/return_authorization_reason:
         many: "Причин разрешения на возврат"
         one: "Причина разрешения на возврат"
@@ -344,12 +451,17 @@ ru:
         many: "Областей/Регионов"
         one: "Область/Регион"
         other: "Области/Регионы"
-      spree/state_change:
       spree/stock_location:
         many: "Расположений складов"
         one: "Расположение склада"
         other: "Расположения складов"
+      spree/store:
+        one: "Магазин"
+        other: "Магазины"
       spree/stock_movement:
+        more: Движений на складах
+        one: Движение на складе
+        other: Движения на складе
       spree/stock_transfer:
         many: "Перемещений по складам"
         one: "Перемещение по складам"

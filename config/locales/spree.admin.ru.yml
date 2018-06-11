@@ -26,7 +26,7 @@ ru:
         stock: Запасы
         display_order: Cортировка товаров
         rma: Возврат
-        adjustment: Управление
+        adjustment: Корректировки
       user:
         account: "Учетная запись"
         addresses: "Адреса"
@@ -65,3 +65,8 @@ ru:
           edit_price: Редактировать цену
         new:
           new_price: Новая цена
+      stock_locations:
+        form:
+          general: Основные настроки
+          settings: Настройки склада
+          address: Адрес склада

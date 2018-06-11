@@ -27,10 +27,10 @@ ru:
       returned: Возвращен
       shipped: Доставлен
     abbreviation: "Аббревиатура"
-    accept:
+    accept: Принят
     acceptance_errors:
     acceptance_status:
-    accepted:
+    accepted: Принят
     account: "Учетная запись"
     account_updated: "Учетная запись обновлена!"
     action: "Действие"
@@ -210,6 +210,7 @@ ru:
     confirm: "Подтвердить"
     confirm_delete: "Подтверждение удаления"
     confirm_password: "Подтверждение пароля"
+    confirm_order: Подтверждение заказа
     continue: "Продолжить"
     continue_shopping: "Продолжить покупки"
     cost_currency: "Валюта"
@@ -261,6 +262,8 @@ ru:
     customer_search: "Поиск клиента"
     cut:
     cvv_response:
+    complete_order: Подтвердить заказ
+    cancel_inventory: Отменить заказ
     dash:
       jirafe:
         app_id: ID приложения
@@ -296,9 +299,10 @@ ru:
     display_currency: "Показывать валюту"
     doesnt_track_inventory:
     edit: "Редактировать"
-    editing_resource:
-    editing_rma_reason: Причины возврата
-    editing_user: "Редактирование пользователя"
+    editing_resource: Ред. ресурс
+    editing_rma_reason: Ред. причины возврата
+    editing_user: "Ред. пользователя"
+    editing_shipping_category: Ред. категор. доставки
     eligibility_errors:
       messages:
         has_excluded_product:
@@ -372,6 +376,7 @@ ru:
     free_shipping: "Бесплатная доставка"
     free_shipping_amount:
     front_end: "в публичном интерфейсе"
+    from: "из"
     gateway: "Платежный шлюз"
     gateway_config_unavailable: "Шлюз не доступен для данного окружения"
     gateway_error: "Ошибка платежного шлюза"
@@ -484,7 +489,9 @@ ru:
     name_on_card:
     name_or_sku: "Наименование или артикул"
     new: "Новый"
+    new_store: Новый магазин
     new_adjustment: "Новая корректировка"
+    new_adjustment_reason: "Новая причина корректир."
     new_country: "Новая страна"
     new_customer: "Для новых пользователей"
     new_customer_return: "Новый возврат покупателю"
@@ -520,7 +527,7 @@ ru:
     new_zone: "Новая зона"
     next: "след."
     no_actions_added: "Нет действий"
-    no_payment_found:
+    no_payment_found: Не найдены платежи за товар
     no_pending_payments: "Нет незавершённых платежей"
     no_products_found: "Не найдено ни одного товара"
     no_resource_found: "%{resource} не найдены"
@@ -566,26 +573,28 @@ ru:
     order_details: "Реквизиты заказа"
     order_email_resent: "Письмо с описанием заказа выслано повторно"
     order_information: "Информация"
+    order_please_refresh: "Нет товаров в заказе. Пожалуйста обновите заказ."
+    order_refresh_totals: "Обновить сумму заказа"
     order_mailer:
       cancel_email:
         dear_customer: "Дорогой покупатель,\n"
         instructions: "Ваш заказ был отменен. Сохраните эту информацию для истории."
         order_summary_canceled: "Детали заказа [ОТМЕНЕНО]"
         subject: "Аннулирование заказа"
-        subtotal:
-        total:
+        subtotal: Сумма
+        total: Итого
       confirm_email:
         dear_customer: "Дорогой покупатель,\n"
         instructions: "Пожалуйста, проверьте детали заказа."
         order_summary: "Детали заказа"
         subject: "Подтверждение заказа"
-        subtotal:
+        subtotal: Сумма
         thanks: "Спасибо, что выбрали нас."
-        total:
+        total: Итого
     order_not_found: "Мы не смогли найти Ваш заказ. Попробуйте еще раз."
     order_number: "Заказ %{number}"
     order_processed_successfully: "Ваш заказ был успешно обработан"
-    order_resumed:
+    order_resumed: Заказ обновлен
     order_state:
       address: "Адрес"
       awaiting_return: "Ожидает возврата"
@@ -603,7 +612,9 @@ ru:
     order_total: "Итого заказ"
     order_updated: "Заказ обновлен"
     orders: "Заказы"
-    other_items_in_other:
+    order_completed: Заказ подтвержден
+    order_ready_for_confirm: Заказ готов к подтверждению
+    other_items_in_other: Другие элементы заказа
     out_of_stock: "Нет в наличии"
     overview: "Обзор"
     package_from: "Фасовку в"
@@ -625,6 +636,7 @@ ru:
     payment_processing_failed: "Невозможно произвести платёж, пожалуйста, проверьте введённую информацию"
     payment_processor_choose_banner_text: "Если Вам нужна помощь в выборе способа оплаты, пожалуйста, зайдите на"
     payment_processor_choose_link: "наша страница оплаты"
+    payment_method_settings_warning: Даннй вид оплаты уже существует
     payment_state: "Статус платежа"
     payment_states:
       balance_due: "частично"
@@ -1038,6 +1050,7 @@ ru:
     variants: "Варианты"
     version: "Версия"
     void: "Аннулировать"
+    validity_period: Период применения
     weight: "Вес"
     what_is_a_cvv: "Что такое CVV?"
     what_is_this: "Что это?"

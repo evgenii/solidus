@@ -2,8 +2,9 @@ ru:
   activemodel:
     attributes:
       spree/order_cancellations:
+        desctiption: Описание
         quantity: Количество
-        state: Штат
+        state: Состояние
         shipment: Доставка
         cancel: Отменить
     errors:
