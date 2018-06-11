@@ -1,0 +1,59 @@
+rails_env       = ENV['RACK_ENV'] || ENV['RAILS_ENV'] || 'production'
+rails_root      = File.expand_path(File.join(File.dirname(__FILE__), '..'))
+
+require 'yaml'
+require 'erb'
+
+#def load_config(root)
+#  config_tpl = ERB.new(File.read("#{root}/config/app_config.yml")).result
+#  YAML.load(config_tpl) rescue {}
+#end
+
+#general_config = load_config(rails_root)
+# app_config = general_config[rails_env] || {}
+
+workers_amount = 3
+
+timeout           20
+worker_processes  workers_amount.to_i
+listen            "#{rails_root}/tmp/pids/unicorn.sock"
+pid               "#{rails_root}/tmp/pids/unicorn.pid"
+working_directory rails_root
+
+if rails_env == 'development'
+  listen 3000
+end
+
+if RACKUP[:daemonize]
+  stderr_path       "#{rails_root}/log/unicorn.stderr.log"
+  stdout_path       "#{rails_root}/log/unicorn.stdout.log"
+end
+
+preload_app true
+
+before_exec do |server|
+  ENV["BUNDLE_GEMFILE"] = "#{rails_root}/Gemfile"
+end
+
+before_fork do |server, worker|
+  defined?(ActiveRecord::Base) and ActiveRecord::Base.connection.disconnect!
+
+  old_pid = "#{rails_root}/tmp/pids/unicorn.pid.oldbin"
+  if File.exists?(old_pid) && server.pid != old_pid
+    begin
+      Process.kill("QUIT", File.read(old_pid).to_i)
+    rescue Errno::ENOENT, Errno::ESRCH
+      # someone else did our job for us
+    end
+  end
+
+end
+
+after_fork do |server, worker|
+  defined?(ActiveRecord::Base) and ActiveRecord::Base.establish_connection
+
+  # Create worker pids
+  child_pid = server.config[:pid].sub(/pid$/, "worker.#{worker.nr}.pid")
+  system("echo #{Process.pid} > #{child_pid}")
+
+end
