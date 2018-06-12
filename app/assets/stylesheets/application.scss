@@ -24,19 +24,19 @@ footer{
       span{
         padding: 2px 12px 4px 8px;
         &.viber_ico{
-          background: url("contact_viber_16.png") left top no-repeat;
+          background: image-url("contact_viber_16.png") left top no-repeat;
         }
         &.kyivstar_ico{
-          background: url("contact_kyivstar_16.png") left top no-repeat;
+          background: image-url("contact_kyivstar_16.png") left top no-repeat;
         }
         &.mts_ico{
-          background: url("contact_mts_16.png") left top no-repeat;
+          background: image-url("contact_mts_16.png") left top no-repeat;
         }
         &.skype_ico{
-          background: url("contact_skype_16.png") left top no-repeat;
+          background: image-url("contact_skype_16.png") left top no-repeat;
         }
         &.mail_ico{
-          background: url("contact_mail_16.png") left top no-repeat;
+          background: image-url("contact_mail_16.png") left top no-repeat;
         }
       }
     }
