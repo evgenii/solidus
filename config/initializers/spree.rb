@@ -13,7 +13,7 @@ Spree.config do |config|
   config.admin_products_per_page = 30
 
   # from address for transactional emails
-  config.mails_from = "store@example.com"
+  config.mails_from = "store@zvshop.com.ua"
 
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false

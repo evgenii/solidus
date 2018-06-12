@@ -1,1 +1,1 @@
-Devise.secret_key = "7148de5cb3ea861dd3e4c56661ecc22c73655ae977846f045763c1ba9a0dae1ded54b1b24b175f344b21b4ae6b66ddba068a"
+Devise.secret_key = ENV.fetch("DEVISE_SECRET_KEY") { '7148de5cb3ea' }
