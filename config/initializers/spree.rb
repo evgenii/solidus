@@ -27,6 +27,7 @@ Spree.config do |config|
   # Frontend:
 
   # Custom logo for the frontend
+  config.logo = "zvshop_logo.png"
   # config.logo = "logo/solidus_logo.png"
 
   # Template to use when rendering layout
