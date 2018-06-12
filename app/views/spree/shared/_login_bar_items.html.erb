@@ -1,0 +1,9 @@
+<% if spree_current_user %>
+  <li><%= link_to Spree.t(:my_account), spree.account_path %></li>
+  <% if spree_current_user.admin? %>
+    <li><%= link_to Spree.t(:admin_area), spree.admin_orders_path %></li>
+  <% end %>
+  <li><%= link_to Spree.t(:logout), spree.logout_path %></li>
+<% else %>
+  <li id="link-to-login"><%= link_to Spree.t(:login), spree.login_path %></li>
+<% end %>

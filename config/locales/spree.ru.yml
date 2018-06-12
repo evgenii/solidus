@@ -484,6 +484,7 @@ ru:
     more: "Больше"
     move_stock_between_locations: "Перемещение товаров между складами"
     my_account: "Моя учетная запись"
+    admin_area: "Админка"
     my_orders: "Мои заказы"
     name: "Наименование"
     name_on_card:
