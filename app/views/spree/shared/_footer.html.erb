@@ -1,0 +1,40 @@
+<% content_for :head do %>
+  <%= stylesheet_link_tag 'application' %>
+  <%= javascript_include_tag 'application' %>
+<% end %>
+
+<footer id="footer" class="sixteen columns" data-hook>
+  <div id="footer-left" class="columns alpha eight" data-hook>
+    <div class="contacts">
+      <h3><%= t '.contacts' %></h3>
+      <ul class="contact_lists">
+        <li>
+          <span class="viber_ico"></span>
+          <span class="kyivstar_ico"></span>
+          <%= link_to '(096) 999-88-77', 'tel:+380969998877' %> /
+          <%= link_to '(096) 999-88-77', 'tel:+380969998877' %>
+        </li>
+        <li>
+          <span class="viber_ico"></span>
+          <span class="mts_ico"></span>
+          <%= link_to '(050) 999-88-77', 'tel:+380509998877' %> /
+          <%= link_to '(050) 999-88-77', 'tel:+380509998877' %>
+        </li>
+        <li class="skype_ico">
+          <span class="skype_ico"></span>
+          <%= link_to 'zvShop.sales', 'skype:zvShop.sales?chat' %>
+        </li>
+        <li class="mail_ico">
+          <span class="mail_ico"></span>
+          <%= link_to 'zvShop@gmail.com', 'mailto:zvShop@gmail.com' %>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="footer-right" class="columns omega eight" data-hook>
+    <span class="powered_by">
+      <%= t 'spree.powered_by' %>
+      <%= link_to 'Solidus', 'http://solidus.io/' %>
+    </span>
+  </div>
+</footer>

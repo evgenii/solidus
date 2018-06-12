@@ -1,0 +1,50 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+footer{
+  span.powered_by{
+    float: right;
+  }
+  div.contacts{
+    ul.contact_lists li{
+      list-style-type: none;
+      span{
+        padding: 2px 12px 4px 8px;
+        &.viber_ico{
+          background: url("contact_viber_16.png") left top no-repeat;
+        }
+        &.kyivstar_ico{
+          background: url("contact_kyivstar_16.png") left top no-repeat;
+        }
+        &.mts_ico{
+          background: url("contact_mts_16.png") left top no-repeat;
+        }
+        &.skype_ico{
+          background: url("contact_skype_16.png") left top no-repeat;
+        }
+        &.mail_ico{
+          background: url("contact_mail_16.png") left top no-repeat;
+        }
+      }
+    }
+  }
+}
+
+ul#products{
+  div.product-image{
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,5 @@
+ru:
+  spree:
+    shared:
+      footer:
+        contacts: 'Контакты'
