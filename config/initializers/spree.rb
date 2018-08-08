@@ -11,6 +11,7 @@ Spree.config do |config|
   config.default_country_iso = "UA"
 
   config.admin_products_per_page = 30
+  config.max_level_in_taxons_menu = 2
 
   # from address for transactional emails
   config.mails_from = "store@zvshop.com.ua"
