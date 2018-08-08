@@ -36,6 +36,44 @@ select, textarea {
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 }
 
+/*--------------------------------------*/
+/* Account
+/*--------------------------------------*/
+#existing-customer, #new-customer, #forgot-password {
+  width: 200px;
+  margin-top: 160px;
+  border: 1px solid #d9d9db;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+
+  & input {
+    &[type="text"], &[type="email"], &[type="password"] {
+      width: 198px;
+    }
+  }
+
+  h6 {
+    text-transform: uppercase;
+  }
+
+  & > div p{
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  & > p{
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+}
+
+#registration {
+  h6 {
+    text-transform: uppercase;
+  }
+}
+
 footer{
   span.powered_by{
     float: right;
