@@ -39,6 +39,22 @@ select, textarea {
 /*--------------------------------------*/
 /* Account
 /*--------------------------------------*/
+#registration #guest_checkout{
+  width: 215px;
+  height: 235px;
+  margin-top: 160px;
+  border: 1px solid #d9d9db;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+
+  & input {
+    &[type="text"], &[type="email"], &[type="password"] {
+      width: 198px;
+    }
+  }
+}
 #existing-customer, #new-customer, #forgot-password {
   width: 200px;
   margin-top: 160px;
