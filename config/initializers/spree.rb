@@ -24,7 +24,6 @@ Spree.config do |config|
   # any inventory changes.
   # config.inventory_cache_threshold = 3
 
-
   # Frontend:
 
   # Custom logo for the frontend
