@@ -87,14 +87,14 @@ Rails.application.configure do
   end
 
   config.action_mailer.delivery_method = :smtp
-  # config.action_mailer.smtp_settings = {
-  #   enable_starttls_auto: true,
-  #   address: 'smtp.gmail.com',
-  #   port: 587,
-  #   user_name: 'login@zvshop.com',
-  #   password: 'password',
-  #   authentication: 'plain'
-  # }
+  config.action_mailer.smtp_settings = {
+    enable_starttls_auto: true,
+    address: 'smtp.gmail.com',
+    port: 587,
+    user_name: ENV["SMTP_USER_NAME"] || '',
+    password: ENV["SMTP_PASSWORD"] || '',
+    authentication: 'plain'
+  }
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false

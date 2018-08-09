@@ -121,8 +121,8 @@ namespace :deploy do
       invoke 'deploy:check:linked_dirs'
       invoke 'deploy:check:make_linked_dirs'
 
-      upload! '.env',                      "#{shared_path}/.env.production"
-      upload! 'config/unicorn.rb.example', "#{shared_path}/config/unicorn.rb"
+      upload! '.env',                              "#{shared_path}/.env.production"
+      upload! 'config/unicorn.rb.example',         "#{shared_path}/config/unicorn.rb"
 
       invoke 'deploy:check:linked_files'
     end
